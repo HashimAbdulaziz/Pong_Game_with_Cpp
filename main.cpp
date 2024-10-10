@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
 #include "Bat.h"
+#include "Ball.h"
 
 
 
@@ -18,6 +19,8 @@ int main() {
 
     // Create a bat instance and initialize its position at the bottom center of the screen
     Bat bat(1920 / 2, 1080 - 20);
+    // Create a Ball instance and initialize its position at the top center of the screen
+    Ball ball(1920 / 2, 0);
 
     // Create a Text object called hud
     Text hud;
@@ -58,6 +61,11 @@ int main() {
             bat.stopRight();
 
 
+        // Update the delta time
+        Time dt = clock.restart();  // dt is frame time
+        bat.update(dt);     // update Method gets dt and move position according to it
+        ball.update(dt);
+
 
         // Update the hud text
         std::stringstream ss;
@@ -70,6 +78,7 @@ int main() {
 
         window.draw(hud);
         window.draw(bat.getShape());
+        window.draw(ball.getShape());
 
 
         window.display();

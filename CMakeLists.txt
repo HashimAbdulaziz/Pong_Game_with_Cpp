@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Pong_Game_with_Cpp main.cpp
         Bat.cpp
-        Bat.h)
+        Bat.h
+        Ball.cpp
+        Ball.h)
 
 
 set(SFML_STATIC_LIBRARIES TRUE)
