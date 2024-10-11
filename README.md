@@ -2,6 +2,12 @@
 
 Welcome to my **Pong Game**, where paddles meet bouncing balls, all powered by C++ and the **SFML** framework! I made this while reading *"Beginning C++ Game Programming"* by **John Horton** — you know, just to brush up on my C++ skills and give OOP some love.
 
+
+
+
+https://github.com/user-attachments/assets/750c731d-7012-4592-8bd2-b809f31a312e
+
+
 ## Features (aka the fun stuff)
 
 - **Classic Pong**: Yep, the bat, the ball, the bouncing — all here! Move the bat to keep that ball in play.
